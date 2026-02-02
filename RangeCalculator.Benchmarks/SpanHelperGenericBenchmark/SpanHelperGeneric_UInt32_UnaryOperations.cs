@@ -86,17 +86,4 @@ public class SpanHelperGeneric_UInt32_UnaryOperations
 
         return result;
     }
-
-    [Benchmark]
-    public int SpanHelperGeneric_UInt32_Sort2()
-    {
-        int result = 0;
-        for (int index = 0; index < this.Count; ++index)
-        {
-            SpanHelperGeneric.Sort2(this.rangesArray[index]);
-            result ^= this.rangesArray[index][0].GetHashCode(); // Prevent optimization
-        }
-
-        return result;
-    }
 }

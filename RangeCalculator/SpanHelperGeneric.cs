@@ -1,6 +1,5 @@
 using SpanList;
 using System.Numerics;
-using System.Runtime.CompilerServices;
 
 namespace RangeCalculator;
 
@@ -113,13 +112,6 @@ public static class SpanHelperGeneric
     }
 
     public static void Sort<T>(Span<CustomRange<T>> result)
-        where T : struct, IEquatable<T>, IComparable<T>
-    {
-        result.Sort(CustomRangeComparer<T>.Instance);
-    }
-
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static void Sort2<T>(Span<CustomRange<T>> result)
         where T : struct, IEquatable<T>, IComparable<T>
     {
         result.Sort(CustomRangeComparer<T>.Instance);
@@ -261,7 +253,7 @@ public static class SpanHelperGeneric
 
 
     /// <returns>left and right parts</returns>
-    private static ValueTuple<CustomRange<T>?, CustomRange<T>?> IntersectableExcept<T>(CustomRange<T> range, CustomRange<T> other, T one)
+    private static (CustomRange<T>?, CustomRange<T>?) IntersectableExcept<T>(CustomRange<T> range, CustomRange<T> other, T one)
         where T : struct, IEquatable<T>, IComparable<T>, IMinMaxValue<T>, IAdditionOperators<T, T, T>, ISubtractionOperators<T, T, T>
     {
         bool hasLeftPart = other.First.CompareTo(range.First) > 0 && !T.MinValue.Equals(other.First);
