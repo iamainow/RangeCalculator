@@ -272,3 +272,9 @@ dotnet_diagnostic.CA2007.severity = silent
 
 # IDE0010: Add missing cases
 dotnet_diagnostic.IDE0010.severity = warning
+
+# Identifiers should not contain underscores
+dotnet_diagnostic.CA1707.severity = none
+
+# Do not use insecure randomness
+dotnet_diagnostic.CA5394.severity = none

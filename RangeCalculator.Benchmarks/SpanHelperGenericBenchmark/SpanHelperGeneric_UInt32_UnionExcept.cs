@@ -1,9 +1,7 @@
 using BenchmarkDotNet.Attributes;
 using CommunityToolkit.HighPerformance.Buffers;
-using RangeCalculator;
-using routes.Extensions;
 
-namespace routes.Benchmarks.SpanHelperBenchmark;
+namespace RangeCalculator.Benchmarks.SpanHelperGenericBenchmark;
 
 [Config(typeof(BenchmarkManualConfig))]
 public class SpanHelperGeneric_UInt32_UnionExcept

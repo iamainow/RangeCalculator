@@ -1,6 +1,4 @@
-﻿using RangeCalculator;
-
-namespace routes.Extensions;
+﻿namespace RangeCalculator.Benchmarks;
 
 public static class CustomArrayExtensions
 {

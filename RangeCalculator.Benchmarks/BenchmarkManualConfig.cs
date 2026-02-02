@@ -2,9 +2,9 @@ using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Environments;
 using BenchmarkDotNet.Jobs;
 
-namespace routes.Benchmarks;
+namespace RangeCalculator.Benchmarks;
 
-public class BenchmarkManualConfig : ManualConfig
+internal class BenchmarkManualConfig : ManualConfig
 {
     public BenchmarkManualConfig()
     {

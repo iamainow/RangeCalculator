@@ -1,7 +1,7 @@
 using RangeCalculator;
 using System.Numerics;
 
-namespace routes.Benchmarks;
+namespace RangeCalculator.Benchmarks;
 
 public static class InputTypeParser
 {

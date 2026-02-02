@@ -1,4 +1,4 @@
-namespace routes.Benchmarks;
+namespace RangeCalculator.Benchmarks;
 
 public enum InputTypeGeneral
 {

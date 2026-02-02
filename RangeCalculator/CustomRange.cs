@@ -4,7 +4,7 @@ using System.Text;
 namespace RangeCalculator;
 
 [StructLayout(LayoutKind.Sequential, Pack = 1)]
-public readonly struct CustomRange<T> : IEquatable<CustomRange<T>>, ICustomRange<T>
+public readonly struct CustomRange<T> : IEquatable<CustomRange<T>>
     where T : struct, IEquatable<T>, IComparable<T>
 {
     private readonly T first;
