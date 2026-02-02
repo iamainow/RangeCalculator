@@ -4,7 +4,7 @@ using CommunityToolkit.HighPerformance.Buffers;
 namespace RangeCalculator.Benchmarks.SpanHelperGenericBenchmark;
 
 [Config(typeof(BenchmarkManualConfig))]
-public class SpanHelperGeneric_UInt32_UnionExcept
+public class SpanHelperGeneric_UInt32_BinaryOperations
 {
     [Params(1_000)]
     public int Count { get; set; }
