@@ -1,4 +1,4 @@
-namespace SpanList;
+namespace RangeCalculator;
 
 public ref struct SpanListRef<T>
 {

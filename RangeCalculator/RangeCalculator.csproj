@@ -1,8 +1,21 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>RangeCalculator</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>iamainow</Authors>
+    <Description>A high-performance .NET library for managing IPv4 addresses, ranges, and network routing tables. Optimized for AOT compilation with SIMD-accelerated operations.</Description>
+    <PackageTags>ip;ipv4;network;routing;range;calculator;simd;aot</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/iamainow/routes</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/iamainow/routes.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.HighPerformance" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SpanList\SpanList.csproj" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
