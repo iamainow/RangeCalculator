@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.HighPerformance" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpanList\SpanList.csproj" />
+  </ItemGroup>
+</Project>
