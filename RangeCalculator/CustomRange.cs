@@ -17,7 +17,7 @@ public readonly struct CustomRange<T> : IEquatable<CustomRange<T>>
     {
         if (first.CompareTo(last) > 0)
         {
-            throw new ArgumentException("first must be less than or equal to last");
+            throw new ArgumentException($"{nameof(first)} must be less than or equal to {nameof(last)}");
         }
         this.first = first;
         this.last = last;

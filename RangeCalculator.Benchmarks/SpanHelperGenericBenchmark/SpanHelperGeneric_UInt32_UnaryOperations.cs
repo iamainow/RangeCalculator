@@ -1,6 +1,5 @@
 
 using BenchmarkDotNet.Attributes;
-using RangeCalculator;
 
 namespace RangeCalculator.Benchmarks.SpanHelperGenericBenchmark;
 

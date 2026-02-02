@@ -4,7 +4,7 @@ using BenchmarkDotNet.Jobs;
 
 namespace RangeCalculator.Benchmarks;
 
-internal class BenchmarkManualConfig : ManualConfig
+public class BenchmarkManualConfig : ManualConfig
 {
     public BenchmarkManualConfig()
     {

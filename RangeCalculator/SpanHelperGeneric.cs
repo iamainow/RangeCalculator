@@ -31,7 +31,7 @@ public static class SpanHelperGeneric
             return result.Length;
         }
 
-        var resultList = new SpanList<CustomRange<T>>(result, 1);
+        var resultList = new SpanListRef<CustomRange<T>>(result, 1);
 
         for (int i = 1; i < result.Length; i++)
         {
@@ -64,7 +64,7 @@ public static class SpanHelperGeneric
             return result.Length;
         }
 
-        var resultList = new SpanList<CustomRange<T>>(result, 1);
+        var resultList = new SpanListRef<CustomRange<T>>(result, 1);
 
         for (int i = 1; i < result.Length; i++)
         {
@@ -150,7 +150,7 @@ public static class SpanHelperGeneric
             return normalized1.Length;
         }
 
-        SpanList<CustomRange<T>> resultList = new SpanList<CustomRange<T>>(result);
+        SpanListRef<CustomRange<T>> resultList = new SpanListRef<CustomRange<T>>(result);
         int index1 = 0;
         int index2 = 0;
 
@@ -315,7 +315,7 @@ public static class SpanHelperGeneric
             return normalized.Length;
         }
 
-        SpanList<CustomRange<T>> resultList = new SpanList<CustomRange<T>>(result);
+        SpanListRef<CustomRange<T>> resultList = new SpanListRef<CustomRange<T>>(result);
 
         int i = 0;
         int j = 0;
@@ -407,7 +407,7 @@ public static class SpanHelperGeneric
 
         int maxLength = normalized1.Length + normalized2.Length - 1;
 
-        SpanList<CustomRange<T>> resultList = new SpanList<CustomRange<T>>(result);
+        SpanListRef<CustomRange<T>> resultList = new SpanListRef<CustomRange<T>>(result);
         int index1 = 0;
         int index2 = 0;
         while (index1 < normalized1.Length && index2 < normalized2.Length)

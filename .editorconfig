@@ -274,7 +274,10 @@ dotnet_diagnostic.CA2007.severity = silent
 dotnet_diagnostic.IDE0010.severity = warning
 
 # Identifiers should not contain underscores
-dotnet_diagnostic.CA1707.severity = none
+dotnet_diagnostic.CA1707.severity = suggestion
 
 # Do not use insecure randomness
-dotnet_diagnostic.CA5394.severity = none
+dotnet_diagnostic.CA5394.severity = suggestion
+
+# Use built-in type aliases
+dotnet_diagnostic.CA1515.severity = suggestion

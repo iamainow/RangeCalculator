@@ -21,7 +21,7 @@ public readonly ref struct RangeArrayGeneric<T>
         this._items = resultBuffer[..length];
     }
 
-    private readonly ReadOnlySpan<CustomRange<T>> _items; // sorted by First, elements not overlapping, elements non-adjacent/disjoint
+    private readonly ReadOnlySpan<CustomRange<T>> _items; // sorted by First, elements not overlapping, elements non-adjacent
 
     public readonly ReadOnlySpan<CustomRange<T>> ToReadOnlySpan() => this._items;
 

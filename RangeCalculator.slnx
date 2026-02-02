@@ -5,7 +5,7 @@
     <File Path="Directory.Packages.props" />
   </Folder>
   <Project Path="RangeCalculator.Benchmarks/RangeCalculator.Benchmarks.csproj" />
-  <Project Path="RangeCalculator.Test/routes.Test.csproj" />
+  <Project Path="RangeCalculator.Test/RangeCalculator.Test.csproj" />
   <Project Path="RangeCalculator/RangeCalculator.csproj" Id="6ce73274-c79c-4b64-9f49-f3dff2149abb" />
   <Project Path="SpanList/SpanList.csproj" Id="1cce8ad4-dc75-470a-9cee-4ad6c8c8db96" />
 </Solution>
