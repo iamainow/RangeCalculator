@@ -1,6 +1,6 @@
 # RangeCalculator
 
-A high-performance, generic range set library for .NET with support for union, intersection, and difference operations. Works with any comparable type including integers, dates, IP addresses, and custom types.
+A high-performance, generic range set library for .NET with support for union, intersection, and difference operations. Works with any comparable type including integers, dates, and custom types.
 
 ## Features
 
@@ -14,7 +14,6 @@ A high-performance, generic range set library for .NET with support for union, i
 
 - Numeric types: `uint`, `int`, `ulong`, `long`, etc.
 - Date/Time: `DateTime`, `DateTimeOffset`
-- Network: `IPAddress` (IPv4)
 - Custom types implementing required interfaces
 
 ## Installation
